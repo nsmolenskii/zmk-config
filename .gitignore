@@ -3,6 +3,8 @@
 !.github
 !boards
 !config
+!keymap-drawer
 !zephyr
 !.gitignore
 !build.yaml
+!README.md
