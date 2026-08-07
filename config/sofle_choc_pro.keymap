@@ -10,18 +10,18 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 #define MAIN 0
-#define SYM 1
-#define NAV 2
-#define KBD 3
+#define LOWER 1
+#define RAISE 2
+#define ADJUST 3
 
 / {
 
-  // Activate KBD layer by holding both SYM and NAV
+  // Activate ADJUST layer by holding both LOWER and RAISE
   conditional_layers {
     compatible = "zmk,conditional-layers";
-    kbd_layer {
-      if-layers = <SYM NAV>;
-      then-layer = <KBD>;
+    adjust_layer {
+      if-layers = <LOWER RAISE>;
+      then-layer = <ADJUST>;
     };
   };
 
@@ -35,20 +35,20 @@
       // |  ESC  |  B  |  L  |  D   |  W   |  Z   |                   |  '   |  F    |  O    |  U   |   J   |   /   |
       // |  TAB  |  N  |  R  |  T   |  S   |  G   |                   |  Y   |  H    |  A    |  E   |   I   |   -   |
       // | SHIFT |  Q  |  X  |  M   |  C   |  V   |  CAPS  |  |  DEL  |  K   |  P    |  .    |  ;   |   ,   | SHIFT |
-      //               | CTRL| ALT  | GUI  |  NAV |  ENTER |  | SPACE |  SYM | BKSPC | GUI   | CTRL |
+      //               | CTRL| ALT  | GUI  | RAISE|  ENTER |  | SPACE | LOWER| BKSPC | GUI   | CTRL |
       bindings = <
         &kp GRAVE &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                           &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &kp EQUAL
         &kp ESC   &kp B  &kp L    &kp D    &kp W     &kp Z                            &kp SQT &kp F    &kp O     &kp U    &kp J    &kp FSLH
         &kp TAB   &kp N  &kp R    &kp T    &kp S     &kp G                            &kp Y  &kp H     &kp A     &kp E    &kp I    &kp MINUS
         &kp LSHFT &kp Q  &kp X    &kp M    &kp C     &kp V   &kp CLCK   &kp DEL       &kp K  &kp P     &kp DOT  &kp SEMI &kp COMMA &kp RSHFT
-        &kp LCTRL &kp LALT &kp LGUI &mo NAV    &kp RET    &kp SPACE  &mo SYM    &kp BSPC &kp RGUI  &kp RCTRL
+        &kp LCTRL &kp LALT &kp LGUI &mo RAISE  &kp RET    &kp SPACE  &mo LOWER  &kp BSPC &kp RGUI  &kp RCTRL
       >;
 
       sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
     };
 
-    sym_layer {
-      display-name = "SYM";
+    lower_layer {
+      display-name = "LOWER";
       // Numpad on the left hand, cross-hand from the right thumb that holds it.
       // Shift over the digits gives ! @ # $ % ^ & * ( ) so they need no slots.
       // Rows 2-4 are the 3x6 block a Corne also has; row 1 is Sofle-only.
@@ -69,8 +69,8 @@
       sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
     };
 
-    nav_layer {
-      display-name = "NAV";
+    raise_layer {
+      display-name = "RAISE";
       // Left hand is everything you need while the right hand is on the mouse:
       // arrows, paging, clipboard, and the undo family stacked on the pinky.
       // Right hand is paired symbols, cross-hand from the left thumb that
@@ -92,14 +92,14 @@
       sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
     };
 
-    kbd_layer {
+    adjust_layer {
       // ----------------------------------------------------------------------------------------------------------------------------
       // | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  |      |      |       |      |       |       |
       // | EP_OFF |         |         |         |         |         |                  |      |      |       |      |       |       |
       // |        |         |         |         |         |         |                  |      |      |       |      |       |       |
       // |        |         |         |         |         |         | STUDIO  | |      |      |      |       |      |       |       |
       //                    |         |         |         |         |         | |      |      |      |       |      |
-      display-name = "KBD";
+      display-name = "ADJUST";
       bindings = <
         &bt BT_CLR        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                            &none &none &none &none &none &none
         &ext_power EP_OFF &none           &none           &none           &none           &none                               &none &none &none &none &none &none
