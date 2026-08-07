@@ -70,13 +70,13 @@
       display-name = "raise";
       // ------------------------------------------------------------------------------------------------------------
       // |       |      |      |       |       |      |                |      |      |       |      |       |       |
-      // |       |      |      |       |       |      |                | PGUP |      |   ^   |      |       |       |
+      // |       |      |      |       |       |      |                | PGUP | HOME |   ^   | END  |       |       |
       // |       |      |      |       |       |      |                | PGDN |   <- |   v   |  ->  |       |       |
       // |       | UNDO | CUT  | COPY  | PASTE |      | MUTE |  | P/P  |      |      |       |      |       |       |
       //                |      |       |       |      |      |  |      |      |      |       |      |
       bindings = <
         &trans     &trans       &trans       &trans       &trans       &trans                            &trans    &trans    &trans    &trans     &trans   &trans
-        &trans     &trans       &trans       &trans       &trans       &trans                            &kp PG_UP &trans    &kp UP    &trans     &trans   &trans
+        &trans     &trans       &trans       &trans       &trans       &trans                            &kp PG_UP &kp HOME  &kp UP    &kp END    &trans   &trans
         &trans     &trans       &trans       &trans       &trans       &trans                            &kp PG_DN &kp LEFT  &kp DOWN  &kp RIGHT  &trans   &trans
         &trans     &kp LG(Z)    &kp LG(X)    &kp LG(C)    &kp LG(V)    &trans          &kp C_MUTE &kp C_PP   &trans    &trans    &trans    &trans     &trans   &trans
                                 &trans       &trans       &trans       &trans          &trans  &trans    &trans    &trans    &trans    &trans
