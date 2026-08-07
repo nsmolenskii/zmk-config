@@ -15,5 +15,5 @@ jobs:
       config_path: "keymap-drawer/config.yaml"
       output_folder: "keymap-drawer"
       keymap_patterns: "config/*.keymap"
-      draw_args: "sofle_choc_pro:'-z sofle'"
+      draw_args: "sofle_choc_pro:'--qmk-info-json config/sofle_choc_pro.json'"
       commit_message: 'keymap-drawer render'
