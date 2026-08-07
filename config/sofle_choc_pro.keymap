@@ -34,13 +34,13 @@
       // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   =   |
       // |  ESC  |  B  |  L  |  D   |  W   |  Z   |                   |  '   |  F    |  O    |  U   |   J   |   /   |
       // |  TAB  |  N  |  R  |  T   |  S   |  G   |                   |  Y   |  H    |  A    |  E   |   I   |   -   |
-      // | SHIFT |  Q  |  X  |  M   |  C   |  V   |  MUTE  |  | PLAY  |  K   |  P    |  .    |  ;   |   ,   | SHIFT |
+      // | SHIFT |  Q  |  X  |  M   |  C   |  V   |  CAPS  |  |  DEL  |  K   |  P    |  .    |  ;   |   ,   | SHIFT |
       //               | CTRL| ALT  | GUI  | RAISE|  ENTER |  | SPACE | LOWER| BKSPC | GUI   | CTRL |
       bindings = <
         &kp GRAVE &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                           &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &kp EQUAL
         &kp ESC   &kp B  &kp L    &kp D    &kp W     &kp Z                            &kp SQT &kp F    &kp O     &kp U    &kp J    &kp FSLH
         &kp TAB   &kp N  &kp R    &kp T    &kp S     &kp G                            &kp Y  &kp H     &kp A     &kp E    &kp I    &kp MINUS
-        &kp LSHFT &kp Q  &kp X    &kp M    &kp C     &kp V   &kp C_MUTE &kp C_PLAY    &kp K  &kp P     &kp DOT  &kp SEMI &kp COMMA &kp RSHFT
+        &kp LSHFT &kp Q  &kp X    &kp M    &kp C     &kp V   &kp CLCK   &kp DEL       &kp K  &kp P     &kp DOT  &kp SEMI &kp COMMA &kp RSHFT
         &kp LCTRL &kp LALT &kp LGUI &mo RAISE  &kp RET    &kp SPACE  &mo LOWER  &kp BSPC &kp RGUI  &kp RCTRL
       >;
 
@@ -71,14 +71,14 @@
       // ------------------------------------------------------------------------------------------------------------
       // |       |      |      |       |       |      |                |      |      |       |      |       |       |
       // |       |      |      |       |       |      |                | PGUP |      |   ^   |      |       |       |
-      // |       |      |      |       |       | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
-      // |       | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
+      // |       |      |      |       |       |      |                | PGDN |   <- |   v   |  ->  |       |       |
+      // |       | UNDO | CUT  | COPY  | PASTE |      | MUTE |  | P/P  |      |      |       |      |       |       |
       //                |      |       |       |      |      |  |      |      |      |       |      |
       bindings = <
         &trans     &trans       &trans       &trans       &trans       &trans                            &trans    &trans    &trans    &trans     &trans   &trans
         &trans     &trans       &trans       &trans       &trans       &trans                            &kp PG_UP &trans    &kp UP    &trans     &trans   &trans
-        &trans     &trans       &trans       &trans       &trans       &kp CLCK                          &kp PG_DN &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
-        &trans     &kp LG(Z)    &kp LG(X)    &kp LG(C)    &kp LG(V)    &trans          &trans  &trans    &trans    &trans    &trans    &trans     &trans   &trans
+        &trans     &trans       &trans       &trans       &trans       &trans                            &kp PG_DN &kp LEFT  &kp DOWN  &kp RIGHT  &trans   &trans
+        &trans     &kp LG(Z)    &kp LG(X)    &kp LG(C)    &kp LG(V)    &trans          &kp C_MUTE &kp C_PP   &trans    &trans    &trans    &trans     &trans   &trans
                                 &trans       &trans       &trans       &trans          &trans  &trans    &trans    &trans    &trans    &trans
       >;
 
