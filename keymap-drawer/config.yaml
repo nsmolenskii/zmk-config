@@ -148,10 +148,8 @@ parse_config:
       tap: $$mdi:bluetooth-connect$$
       shifted: '4'
       type: text_with_symbol
-    '&studio_unlock':
-      tap: $$mdi:lock-open-outline$$
-      shifted: ZMK
-      type: text_with_symbol
+    '&studio_unlock': $$mdi:lock-open-outline$$
+    '&ext_power EP_OFF': $$mdi:power-plug-off-outline$$
 
   # ZMK
   zmk_combos: {}
@@ -323,8 +321,10 @@ parse_config:
     K_CMENU: Menu
     INS: 'Ins'
     RIGHT_COMMAND: $$mdi:apple-keyboard-command$$
-    PG_UP: 'PgUp'
-    PG_DN: 'PgDn'
+    PG_UP: $$mdi:chevron-double-up$$
+    PAGE_UP: $$mdi:chevron-double-up$$
+    PG_DN: $$mdi:chevron-double-down$$
+    PAGE_DOWN: $$mdi:chevron-double-down$$
     INSERT:
       tap: 'Ins'
       shifted: ''
@@ -340,6 +340,9 @@ parse_config:
     LEFT: $$mdi:arrow-left-bold-outline$$
     RIGHT: $$mdi:arrow-right-bold-outline$$
     RIGHT_ARROW: $$mdi:arrow-right-bold-outline$$
+    # Drawn to sit above LEFT/RIGHT: same arrow, stopped by a wall
+    HOME: $$mdi:arrow-collapse-left$$
+    END: $$mdi:arrow-collapse-right$$
 
     # Whitespace
     ENTER:
@@ -365,6 +368,7 @@ parse_config:
     # Locks
     CAPSLOCK: $$mdi:apple-keyboard-caps$$
     CAPS: $$mdi:apple-keyboard-caps$$
+    CLCK: $$mdi:apple-keyboard-caps$$
 
     # Sound
     C_MUTE: $$mdi:volume-off$$
