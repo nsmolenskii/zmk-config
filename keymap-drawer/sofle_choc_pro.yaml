@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: sofle_choc_pro}
 layers:
-  default:
+  MAIN:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -12,105 +12,108 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '`', s: '~'}
+  - {t: '=', s: +}
   - $$mdi:keyboard-esc$$
-  - Q
+  - B
+  - L
+  - D
   - W
-  - E
+  - Z
+  - {t: '''', s: '"'}
+  - F
+  - O
+  - U
+  - J
+  - {t: /, s: '?'}
+  - $$mdi:keyboard-tab$$
+  - N
   - R
   - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: '$$mdi:backspace-outline$$', type: backspace}
-  - $$mdi:keyboard-tab$$
-  - A
   - S
-  - D
-  - F
   - G
+  - Y
   - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
+  - A
+  - E
+  - I
+  - {t: '-', s: _}
   - $$mdi:apple-keyboard-shift$$
-  - Z
+  - Q
   - X
+  - M
   - C
   - V
-  - B
-  - $$mdi:volume-off$$
-  - $$mdi:play-pause$$
-  - N
-  - M
-  - {t: ',', s: <}
+  - $$mdi:apple-keyboard-caps$$
+  - $$mdi:backspace-reverse-outline$$
+  - K
+  - P
   - {t: ., s: '>'}
-  - {t: /, s: '?'}
+  - {t: ;, s: ':'}
+  - {t: ',', s: <}
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - lower
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
+  - RAISE
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
-  - raise
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
+  - LOWER
+  - {t: '$$mdi:backspace-outline$$', type: backspace}
   - $$mdi:apple-keyboard-command$$
-  lower:
+  - $$mdi:apple-keyboard-control$$
+  LOWER:
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - F1
   - F2
   - F3
   - F4
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - F5
   - F6
   - F7
   - F8
-  - F9
-  - F10
-  - F11
-  - {t: '`', s: '~'}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - F9
+  - F10
+  - F11
   - F12
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - '|'
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '=', s: +}
-  - {t: '-', s: _}
-  - +
-  - '{'
-  - '}'
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - {t: ;, s: ':'}
-  - ':'
-  - {t: \, s: '|'}
+  - {t: '0', s: )}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -119,16 +122,7 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  raise:
-  - {t: '$$mdi:bluetooth$$', s: x, type: text_with_symbol}
-  - {t: '$$mdi:bluetooth-connect$$', s: '0', type: text_with_symbol}
-  - {t: '$$mdi:bluetooth-connect$$', s: '1', type: text_with_symbol}
-  - {t: '$$mdi:bluetooth-connect$$', s: '2', type: text_with_symbol}
-  - {t: '$$mdi:bluetooth-connect$$', s: '3', type: text_with_symbol}
-  - {t: '$$mdi:bluetooth-connect$$', s: '4', type: text_with_symbol}
+  RAISE:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -136,56 +130,60 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - Ins
-  - 'Ptr Scr
-
-    '
-  - Menu
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - PgUp
   - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - $$mdi:arrow-collapse-left$$
   - $$mdi:arrow-up-bold-outline$$
+  - $$mdi:arrow-collapse-right$$
+  - $$mdi:chevron-double-up$$
   - {t: '$$mdi:chevron-down$$', type: trans}
+  - '{'
+  - '}'
+  - +
+  - {t: '-', s: _}
+  - {t: \, s: '|'}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - CLCK
-  - PgDn
+  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - $$mdi:arrow-left-bold-outline$$
   - $$mdi:arrow-down-bold-outline$$
   - $$mdi:arrow-right-bold-outline$$
-  - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:backspace-outline$$', type: backspace}
+  - $$mdi:chevron-double-down$$
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - $$mdi:undo$$
-  - $$mdi:content-cut$$
-  - $$mdi:content-copy$$
-  - $$mdi:content-paste$$
-  - {t: '$$mdi:lock-open-outline$$', s: ZMK, type: text_with_symbol}
+  - (
+  - )
+  - {t: '=', s: +}
+  - _
+  - {t: '`', s: '~'}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: Z, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: X, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: C, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
+  - $$mdi:skip-previous$$
+  - $$mdi:skip-next$$
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - <
+  - '>'
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
+  - $$mdi:volume-off$$
+  - $$mdi:play-pause$$
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  adjust:
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  ADJUST:
   - {t: '$$mdi:bluetooth$$', s: x, type: text_with_symbol}
   - {t: '$$mdi:bluetooth-connect$$', s: '0', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-connect$$', s: '1', type: text_with_symbol}
@@ -198,21 +196,7 @@ layers:
   - ''
   - ''
   - ''
-  - EP TOG
-  - RGB HUD
-  - RGB HUI
-  - RGB SAD
-  - RGB SAI
-  - RGB EFF
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - RGB BRD
-  - RGB BRI
+  - $$mdi:power-plug-off-outline$$
   - ''
   - ''
   - ''
@@ -228,7 +212,21 @@ layers:
   - ''
   - ''
   - ''
-  - RGB TOG
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - $$mdi:lock-open-outline$$
   - ''
   - ''
   - ''
