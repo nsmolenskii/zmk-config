@@ -4,8 +4,8 @@ on:
   push:
     paths:
       - .github/workflows/build.yml
-      - config
-      - zephyr
+      - config/**
+      - zephyr/**
       - build.yaml
 
 jobs:
