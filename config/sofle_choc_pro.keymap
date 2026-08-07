@@ -79,14 +79,14 @@
       // |       |      |      |       |       |      |                |      |      |       |      |       |       |
       // |       |      | HOME |   ^   |  END  | PGUP |                |      |  {   |   }   |  +   |   -   |       |
       // |       | SALL |  <-  |   v   |  ->   | PGDN |                |      |  (   |   )   |  =   |   _   |       |
-      // | REDO  | UNDO | CUT  | COPY  | PASTE |      | MUTE |  | P/P  |      |  [   |   ]   |  <   |   >   |       |
-      //                |      |       |       |      |      |  |      |      |      |       |      |
+      // | REDO  | UNDO | CUT  | COPY  | PASTE | VOL- | VOL+ |  | PREV | NEXT |  [   |   ]   |  <   |   >   |       |
+      //               |     |      |      |      |  MUTE  |  |  P/P  |      |       |       |       |
       bindings = <
         &trans     &trans       &trans       &trans       &trans       &trans                            &trans    &trans    &trans    &trans     &trans     &trans
         &trans     &trans       &kp HOME     &kp UP       &kp END      &kp PG_UP                         &trans    &kp LBRC  &kp RBRC  &kp PLUS   &kp MINUS  &trans
         &trans     &kp LG(A)    &kp LEFT     &kp DOWN     &kp RIGHT    &kp PG_DN                         &trans    &kp LPAR  &kp RPAR  &kp EQUAL  &kp UNDER  &trans
-        &kp LS(LG(Z)) &kp LG(Z) &kp LG(X)    &kp LG(C)    &kp LG(V)    &trans          &kp C_MUTE &kp C_PP   &trans    &kp LBKT  &kp RBKT  &kp LT     &kp GT     &trans
-                                &trans       &trans       &trans       &trans          &trans  &trans    &trans    &trans    &trans    &trans
+        &kp LS(LG(Z)) &kp LG(Z) &kp LG(X)    &kp LG(C)    &kp LG(V)    &kp C_VOL_DN    &kp C_VOL_UP &kp C_PREV &kp C_NEXT &kp LBKT  &kp RBKT  &kp LT     &kp GT     &trans
+                                &trans       &trans       &trans       &trans          &kp C_MUTE &kp C_PP  &trans    &trans    &trans    &trans
       >;
 
       sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
