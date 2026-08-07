@@ -421,6 +421,10 @@ parse_config:
     LG(Z):
       tap: 'Z'
       hold: $$mdi:apple-keyboard-command$$
+    # Two modifier glyphs cannot share one legend field, so the hold is text
+    LS(LG(Z)):
+      tap: 'Z'
+      hold: ⇧⌘
     LG(X):
       tap: 'X'
       hold: $$mdi:apple-keyboard-command$$
